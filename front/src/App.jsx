@@ -10,7 +10,7 @@ function App() {
   }, []);
 
   const buscarTarefas = () => {
-    fetch('http://localhost:8000/api/tarefas/')
+    fetch('http://54.152.50.17:8000/api/tarefas/')
       .then((res) => res.json())
       .then((data) => setTarefas(data))
       .catch((err) => console.error('Erro ao carregar tarefas:', err));
@@ -20,7 +20,7 @@ function App() {
     e.preventDefault();
     const novaTarefa = { titulo, descricao };
 
-    fetch('http://localhost:8000/api/tarefas/', {
+    fetch('http://54.152.50.17:8000/api/tarefas/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ function App() {
   };
 
   const removerTarefa = (id) => {
-    fetch(`http://localhost:8000/api/tarefas/${id}/`, {
+    fetch(`http://54.152.50.17:8000/api/tarefas/${id}/`, {
       method: 'DELETE',
     })
       .then(() => {

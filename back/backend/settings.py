@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=m4x&liulw$c)!zgp(q9f=69$%3w1t6mg_$wj+1k%q7gzn4-l=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*', '54.152.50.17']
 
 
 # Application definition
@@ -125,6 +125,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Endereço do Vite (React)
-]
+CORS_ALLOWED_ORIGINS = True
+    
+
